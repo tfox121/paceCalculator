@@ -1,0 +1,32 @@
+#customDistance {
+  height: 100%;
+}
+
+.ui.fluid.input {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: row;
+  padding: 0px;
+}
+
+.input-container > input {
+  max-width: 60px;
+  line-height: 1.15;
+}
+
+.distance-units {
+  display: flex;
+  flex-direction: row;
+  min-width: 100px;
+  align-items: center;
+}
+
+#km, #mi {
+  margin-left: 10px;
+  margin-right: 5px;
+}
+
