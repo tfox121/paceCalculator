@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/paceCalculator/static/css/main.9056da7f.chunk.css",
+    "main.js": "/paceCalculator/static/js/main.d41abb94.chunk.js",
+    "main.js.map": "/paceCalculator/static/js/main.d41abb94.chunk.js.map",
+    "runtime-main.js": "/paceCalculator/static/js/runtime-main.8d65fc43.js",
+    "runtime-main.js.map": "/paceCalculator/static/js/runtime-main.8d65fc43.js.map",
+    "static/js/2.2e74cfe9.chunk.js": "/paceCalculator/static/js/2.2e74cfe9.chunk.js",
+    "static/js/2.2e74cfe9.chunk.js.map": "/paceCalculator/static/js/2.2e74cfe9.chunk.js.map",
+    "index.html": "/paceCalculator/index.html",
+    "precache-manifest.10b27a9a633edb3f0dccf222ac996162.js": "/paceCalculator/precache-manifest.10b27a9a633edb3f0dccf222ac996162.js",
+    "service-worker.js": "/paceCalculator/service-worker.js",
+    "static/css/main.9056da7f.chunk.css.map": "/paceCalculator/static/css/main.9056da7f.chunk.css.map",
+    "static/js/2.2e74cfe9.chunk.js.LICENSE.txt": "/paceCalculator/static/js/2.2e74cfe9.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8d65fc43.js",
+    "static/js/2.2e74cfe9.chunk.js",
+    "static/css/main.9056da7f.chunk.css",
+    "static/js/main.d41abb94.chunk.js"
+  ]
+}
