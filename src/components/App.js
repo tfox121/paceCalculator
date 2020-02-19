@@ -1,5 +1,4 @@
 import React from "react";
-// import styled from "styled-components"
 
 import Distance from "./Distance";
 import Presets from "./Presets";
