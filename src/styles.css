@@ -1,0 +1,29 @@
+body {
+  background-color: #4C4C4C !important;
+}
+
+#root {
+  margin: 0 auto;
+  max-width: 500px;
+}
+
+h1, h3 {
+  text-align: center;
+}
+
+.ui.container {
+  margin-top: 20px;
+}
+
+.ui.grid {
+  justify-content: center;
+}
+
+.or {
+  text-align: center;
+  padding: 0px !important;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

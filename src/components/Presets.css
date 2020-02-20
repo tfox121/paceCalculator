@@ -1,0 +1,14 @@
+.preset-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.preset-selector {
+  padding-top: 5px;
+  width: 100%;
+}
+
+.preset-selector > select {
+  width: 100%;
+}
+

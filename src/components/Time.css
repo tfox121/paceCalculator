@@ -1,0 +1,17 @@
+.time-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.time-container > input {
+  max-width: 48px;
+  line-height: 1.15;
+  margin-right: 10px;
+  margin-left: 5px;
+}
+
+.time-container > div {
+  display: inline;
+  min-width: 50px;
+}
