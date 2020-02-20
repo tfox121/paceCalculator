@@ -21,7 +21,7 @@ class Time extends React.Component {
           <label>Hrs:</label>
           <input
             type="number"
-            value={this.props.hours}
+            value={this.props.hours > 0 ? this.props.hours : ''}
             onChange={this.onHoursChange}
             min="0"
             max="1000"
@@ -30,7 +30,7 @@ class Time extends React.Component {
           <label>Mins:</label>
           <input
             type="number"
-            value={this.props.mins}
+            value={this.props.mins > 0 ? this.props.mins : ''}
             onChange={this.onMinsChange}
             min="0"
             max="60"
@@ -39,7 +39,7 @@ class Time extends React.Component {
           <label>Secs:</label>
           <input
             type="number"
-            value={this.props.secs}
+            value={this.props.secs > 0 ? this.props.secs : ''}
             onChange={this.onSecsChange}
             min="0"
             max="60"

@@ -23,7 +23,7 @@ class Distance extends React.Component {
             <br />
             <input
               type="number"
-              value={this.props.distance}
+              value={this.props.distance > 0 ? this.props.distance : ''}
               onChange={this.onInputChange}
             />
             <div className="distance-units">

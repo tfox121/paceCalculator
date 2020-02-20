@@ -9,7 +9,7 @@ import { presetList } from "../presetList";
 
 class App extends React.Component {
   state = {
-    distance: 0,
+    distance: null,
     unit: "km",
     pace: 0,
     timeHours: 0,
