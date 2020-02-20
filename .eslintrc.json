@@ -19,5 +19,8 @@
       "version": "detect",
       "flowVersion": "0.53"
     }
+  },
+  "rules": {
+    "react/prop-types": 0
   }
 }

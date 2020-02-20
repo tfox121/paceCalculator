@@ -1,18 +1,18 @@
-import React from "react";
+import React from 'react';
 
 import './Time.css';
 
 class Time extends React.Component {
   onHoursChange = event => {
-    this.props.onInputChange(event.target.value, "Hours");
+    this.props.onInputChange(event.target.value, 'Hours');
   };
 
   onMinsChange = event => {
-    this.props.onInputChange(event.target.value, "Mins");
+    this.props.onInputChange(event.target.value, 'Mins');
   };
 
   onSecsChange = event => {
-    this.props.onInputChange(event.target.value, "Secs");
+    this.props.onInputChange(event.target.value, 'Secs');
   };
 
   render() {

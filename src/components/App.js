@@ -1,16 +1,16 @@
-import React from "react";
+import React from 'react';
 
-import Distance from "./Distance";
-import Presets from "./Presets";
-import Selector from "./Selector";
-import Time from "./Time";
+import Distance from './Distance';
+import Presets from './Presets';
+import Selector from './Selector';
+import Time from './Time';
 
-import { presetList } from "../presetList";
+import { presetList } from '../presetList';
 
 class App extends React.Component {
   state = {
     distance: null,
-    unit: "km",
+    unit: 'km',
     pace: 0,
     timeHours: 0,
     timeMins: 0,
@@ -18,9 +18,9 @@ class App extends React.Component {
     paceHours: 0,
     paceMins: 0,
     paceSecs: 0,
-    timeSelector: "pace",
-    distanceSelector: "pace",
-    paceSelector: "time"
+    timeSelector: 'pace',
+    distanceSelector: 'pace',
+    paceSelector: 'time'
   };
 
   getSecs = (hours, mins, secs) => {
@@ -28,7 +28,7 @@ class App extends React.Component {
   };
 
   roundTo2 = num => {
-    return +(Math.round(num + "e+2") + "e-2");
+    return +(Math.round(num + 'e+2') + 'e-2');
   };
 
   paceCalc = () => {
@@ -98,13 +98,13 @@ class App extends React.Component {
       return;
     }
     this.setState({ [`time${unit}`]: parseInt(time, 10) || 0 }, () => {
-      if (this.state.timeSelector === "pace") {
+      if (this.state.timeSelector === 'pace') {
         if (this.state.distance === 0) {
           return;
         }
         this.setPace();
       }
-      if (this.state.timeSelector === "distance") {
+      if (this.state.timeSelector === 'distance') {
         if (
           this.state.paceHours === 0 &&
           this.state.paceMins === 0 &&
@@ -120,7 +120,7 @@ class App extends React.Component {
   onDistanceChange = value => {
     value = parseFloat(value);
     this.setState({ distance: value || 0 }, () => {
-      if (this.state.distanceSelector === "pace") {
+      if (this.state.distanceSelector === 'pace') {
         if (
           this.state.timeHours === 0 &&
           this.state.timeMins === 0 &&
@@ -131,7 +131,7 @@ class App extends React.Component {
         this.setPace();
         return;
       }
-      if (this.state.distanceSelector === "time") {
+      if (this.state.distanceSelector === 'time') {
         if (
           this.state.paceHours === 0 &&
           this.state.paceMins === 0 &&
@@ -145,7 +145,6 @@ class App extends React.Component {
   };
 
   onPresetChange = value => {
-    console.log(value);
     const selectedPreset = presetList.filter(preset => {
       return preset.title === value;
     })[0];
@@ -155,7 +154,7 @@ class App extends React.Component {
         unit: selectedPreset.unit
       },
       () => {
-        if (this.state.distanceSelector === "pace") {
+        if (this.state.distanceSelector === 'pace') {
           if (
             this.state.timeHours === 0 &&
             this.state.timeMins === 0 &&
@@ -166,7 +165,7 @@ class App extends React.Component {
           this.setPace();
           return;
         }
-        if (this.state.distanceSelector === "time") {
+        if (this.state.distanceSelector === 'time') {
           if (
             this.state.paceHours === 0 &&
             this.state.paceMins === 0 &&
@@ -188,11 +187,11 @@ class App extends React.Component {
     this.setState(
       {
         distance: this.roundTo2(
-          this.state.distance * (value === "mi" ? 0.621371192 : 1.609344)
+          this.state.distance * (value === 'mi' ? 0.621371192 : 1.609344)
         )
       },
       () => {
-        if (this.state.distanceSelector === "pace") {
+        if (this.state.distanceSelector === 'pace') {
           if (
             this.state.timeHours === 0 &&
             this.state.timeMins === 0 &&
@@ -206,7 +205,7 @@ class App extends React.Component {
           this.setPace();
           return;
         }
-        if (this.state.distanceSelector === "time") {
+        if (this.state.distanceSelector === 'time') {
           if (
             this.state.paceHours === 0 &&
             this.state.paceMins === 0 &&
@@ -225,7 +224,7 @@ class App extends React.Component {
       return;
     }
     this.setState({ [`pace${unit}`]: parseInt(time, 10) || 0 }, () => {
-      if (this.state.paceSelector === "time") {
+      if (this.state.paceSelector === 'time') {
         if (this.state.distance === 0 || !this.state.distance) {
           return;
         }
@@ -233,7 +232,7 @@ class App extends React.Component {
         this.setTime();
         return;
       }
-      if (this.state.paceSelector === "distance") {
+      if (this.state.paceSelector === 'distance') {
         if (
           this.state.timeHours === 0 &&
           this.state.timeMins === 0 &&

@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 
-import "./Distance.css";
+import './Distance.css';
 
 class Distance extends React.Component {
   onInputChange = event => {

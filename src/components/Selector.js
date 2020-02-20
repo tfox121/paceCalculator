@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 
-import "./Selector.css";
+import './Selector.css';
 
 class Selector extends React.Component {
   onSelectorChange = event => {

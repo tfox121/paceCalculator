@@ -1,3 +1,5 @@
+/* eslint-env browser */
+
 import React from 'react';
 import ReactDOM from 'react-dom'
 
@@ -7,5 +9,5 @@ import './styles.css';
 
 ReactDOM.render(
   <App />,
-  document.querySelector("#root")
+  document.querySelector('#root')
 );
