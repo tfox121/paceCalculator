@@ -1,0 +1,16 @@
+body {
+  background-color: #4C4C4C !important;
+}
+
+#root {
+  margin: 0 auto;
+  max-width: 500px;
+}
+
+h1, h3 {
+  text-align: center;
+}
+
+.ui.container {
+  margin-top: 20px;
+}
