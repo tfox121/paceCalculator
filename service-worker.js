@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/paceCalculator/precache-manifest.10b27a9a633edb3f0dccf222ac996162.js"
+  "/paceCalculator/precache-manifest.a2c71bd303536c9351ce037d61a339b3.js"
 );
 
 self.addEventListener('message', (event) => {
