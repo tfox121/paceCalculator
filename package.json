@@ -19,7 +19,7 @@
     "eslint-plugin-react": "^7.18.3",
     "ignore-styles": "^5.0.1",
     "mocha": "^7.0.1",
-    "react-scripts": "0.9.5"
+    "react-scripts": "5.0.1"
   },
   "engines": {
     "node": "8.x"
